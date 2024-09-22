@@ -1,0 +1,17 @@
+﻿//(실습 6) 아래 코드의 swap 함수는 인풋 파라미터를 서로 바꾸는 역할을 합니다. 정상적으로 동작하도록 프로그램을 수정하세요. (힌트: 레퍼런스 활용)
+#include<iostream>
+
+void swap(int& first, int& second)
+{
+	int temp = first;
+	first = second;
+	second = temp;
+}
+
+int main()
+{
+	int a = 2, b = 3;
+	swap(a, b);
+	std::cout << a << " " << b << std::endl;
+	return 0;
+}
